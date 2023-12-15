@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    flex-grow: 1;
+    margin: 30px;
+}
+
+header{
+    background: #111;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0px;
+}
+
+footer{
+    background: #202020;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.row{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col{
+    
+    width: 23%;
+    margin-bottom: 10px;
+}
+
+.col img{
+    width: 100%;
+
+}
+
+
+/* mediaqueries */
+/* dispositivos sm o celulares */
+/* tipo de medio: screen, print, speach, all */
+@media screen and (max-width: 767px){
+    .col{
+        width: 100%;
+    }
+
+    h1{
+        color: aquamarine;
+    }
+}
+
+/* dispositivos medianos md o tablets */
+@media all and (min-width: 768px) and (max-width: 991px){
+    .col{
+        width: 49%;
+    }
+}
